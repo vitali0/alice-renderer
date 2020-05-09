@@ -18,7 +18,7 @@ export interface Response {
   end_session: boolean;
 }
 
-declare function reply(stringParts: string[]): Response;
+declare function reply(stringParts: TemplateStringsArray): Response;
 declare function buttons(
   items: Array<string | Button>,
   defaults?: Button
